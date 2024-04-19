@@ -10,4 +10,14 @@ console.log("2.3 + 2.4 = " + val);
 function sumOfFloatNum() {
     console.log("2.3 + 2.4 = " + (parseFloat('2.3') + parseFloat('2.4')).toFixed(2));
 }
-sumOfFloatNum();
+sumOfFloatNum(); 
+
+// Approach 2: Using parseFloat() and Math.round() method
+
+let output = parseFloat('2.3') + parseFloat('2.4');
+console.log("2.3 + 2.4 = " + val);
+
+function sum(){
+    console.log("2.3 + 2.4 = " + Math.round((parseFloat('2.3') + parseFloat('2.4')) * 100) / 100);
+}
+sum();
