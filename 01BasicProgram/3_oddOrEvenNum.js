@@ -27,3 +27,11 @@ function checkOddOrEven(n) {
 }
 console.log(checkOddOrEven(12)); //odd
 console.log(checkOddOrEven(1231)); //even
+
+//Approach 3: Using Bitwise OR Operator ( || )
+
+function oddOrEvenCheck(number) {
+    return ( number | 1) === number ? "odd" : "Even";
+}
+console.log(oddOrEvenCheck(14));
+console.log(oddOrEvenCheck(17));
