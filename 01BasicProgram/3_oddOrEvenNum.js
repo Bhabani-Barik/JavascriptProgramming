@@ -35,3 +35,12 @@ function oddOrEvenCheck(number) {
 }
 console.log(oddOrEvenCheck(14));
 console.log(oddOrEvenCheck(17));
+
+// Approach 4: Using Ternary Operator
+
+function oddOrEven(num) {
+    return num % 2 == 0 ? "Even" : "Odd";
+}
+
+console.log(oddOrEven(12));
+console.log(oddOrEven(21));
