@@ -40,3 +40,19 @@ console.log(`Before swaping: x = ${x}`);
 console.log(`Before swaping: y = ${y}`);
 
 
+// Approach 3: Using Destructing Assignment
+
+let num1 = 40;
+let num2 = 30;
+
+console.log(`Before swap: num1 = ${num1}`);
+console.log(`Before swap: num2 = ${num2}`);
+
+// num1 would be swapped to num2 and b would be swapped to num1
+[num2, num1] = [num1, num2];
+
+console.log(`Before swap:num1  = ${num1}`);
+console.log(`Before swap:num2  = ${num2}`);2
+
+
+
