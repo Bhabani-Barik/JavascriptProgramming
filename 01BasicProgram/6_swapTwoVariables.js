@@ -56,3 +56,19 @@ console.log(`Before swap:num2  = ${num2}`);2
 
 
 
+// Approach 4: Using XORBitwise Operator 
+// the XOR bitwise operation is used to swap the values without the need for a temporary variable.
+
+let c = 5;
+let d = 10;
+
+console.log("Before swapping: c =", c, "d =", d);
+
+c = c ^ d;
+d = c ^ d;
+c = c ^ d;
+
+console.log("After swapping: c =", c, "d =", d);
+
+
+
