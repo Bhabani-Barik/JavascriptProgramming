@@ -39,3 +39,29 @@ else {
 
 // Approach 3: Using Ternary Operator
 
+function checkingNumberSign() {
+    const input = prompt("Enter a Number:");
+    const number = Number(input);
+
+    if (isNaN(number)){
+        console.log("Invalid Input. Please enter a valid input.");
+    } else {
+        const result = 
+            number === 0 ? "The Number is Zero" :
+            number > 0 ? ` ${number}  is Positive` : ` ${number} is negative.`
+
+        console.log(result);
+    }
+}
+
+// checkingNumberSign(); 
+
+function checkSign(){
+    let number = 200;
+
+    const result = 
+        number === 0 ? "The Number is Zero." :
+        number > 0 ? ` ${number} is Positive.` : ` ${number} is Negative.`;
+    console.log(result);
+}
+checkSign();
