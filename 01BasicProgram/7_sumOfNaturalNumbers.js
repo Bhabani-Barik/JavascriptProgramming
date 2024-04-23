@@ -26,3 +26,11 @@ function findSumOfNaturalNums(n) {
         return n; //15
     }
 }
+
+// Approach 3 : Using Mathmatical Formula
+
+function sumofNaturalNumbers(n) {
+    return n * (n + 1) / 2;
+}
+const num  = 5;
+console.log(sumofNaturalNumbers(n));
