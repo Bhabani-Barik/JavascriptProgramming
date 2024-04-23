@@ -23,7 +23,7 @@ function findSumOfNaturalNums(n) {
     if ( n !== 0){
         return n + findSum(n -1);
     } else {
-        return n; //15
+        return n; 
     }
 }
 
