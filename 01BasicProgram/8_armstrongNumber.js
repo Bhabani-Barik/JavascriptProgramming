@@ -74,3 +74,48 @@ isArmstrong(153);
 
 // Input value 520
 isArmstrong(520);
+
+
+
+// Approach 3: Using Array.from() method
+// Array.from(object, mapFunction, thisValue);
+
+function isArmstrongNum(number) {
+	const digits = Array.from(String(number), Number);
+	const order = digits.length;
+
+	// Calculate the total sum using array.map()
+	const sum = digits.reduce(
+		(acc, digit) =>
+			acc + Math.pow(parseInt(digit), order), 0);
+
+	if (sum === number) {
+		console.log(
+			number + " is an Armstrong Number");
+	}
+	else {
+		console.log(
+			number + " is not an Armstrong Number");
+	}
+}
+
+// Input number 1634
+isArmstrongNum(1634);
+
+// Input number 749
+isArmstrongNum(749);
+
+
+// Approach 4: Using Array Reduce() method
+
+function isArmstrongnumber(number) {
+	const numStr = number.toString();
+	const numDigits = numStr.length;
+
+	const sum = [...numStr].reduce((acc, digit) =>
+		acc + Math.pow(parseInt(digit), numDigits), 0);
+
+	return sum === number;
+}
+
+console.log(isArmstrongnumber(153)); // Example usage
